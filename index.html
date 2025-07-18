@@ -96,7 +96,8 @@
   <a href="https://www.tiktok.com/@m_niko_kasep" class="follow-btn" target="_blank">Follow TikTok</a>
 
   <div class="video-container">
-    <video id="myVideo" autoplay loop muted playsinline>
+    <video autoplay loop controls playsinline>
+      <source src="gta.mp4" type="video/mp4" />
       <source src="gta.mp4" type="video/mp4" />
       Browser kamu tidak mendukung video.
     </video>
@@ -120,17 +121,6 @@
       Lynk.id
     </a>
   </div>
-
-  <script>
-    // Mengaktifkan suara setelah halaman dimuat
-    window.addEventListener('load', function () {
-      const video = document.getElementById('myVideo');
-      video.muted = false;
-      video.play().catch(function (error) {
-        console.warn('Autoplay dengan suara diblokir oleh browser:', error);
-      });
-    });
-  </script>
 
 </body>
 </html>
